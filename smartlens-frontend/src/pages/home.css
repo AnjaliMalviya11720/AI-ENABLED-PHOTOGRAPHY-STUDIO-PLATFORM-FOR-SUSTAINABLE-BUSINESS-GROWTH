@@ -1,0 +1,207 @@
+.home-page {
+  padding: 32px 20px 56px;
+  max-width: 980px;
+  margin: 0 auto;
+  color: #111439;
+  position: relative;
+  z-index: 1;
+}
+
+body.home-theme-stripe {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(121, 88, 255, 0.26), transparent 36%),
+    radial-gradient(circle at 88% 0%, rgba(0, 212, 255, 0.2), transparent 30%),
+    linear-gradient(160deg, #f8f8f9 0%, #eceef9 45%, #f8f8f9 100%);
+  color: #111439;
+}
+
+body.home-theme-stripe .navbar {
+  background: rgba(248, 248, 249, 0.78);
+  border-bottom: 1px solid rgba(17, 20, 57, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+body.home-theme-stripe .navbar-brand a {
+  background: linear-gradient(95deg, #111439, #5f6fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.home-theme-stripe .navbar-links a {
+  color: #1f255f;
+}
+
+body.home-theme-stripe .navbar-links a:hover {
+  color: #5f6fff;
+}
+
+.home-hero {
+  position: relative;
+  border: 1px solid rgba(17, 20, 57, 0.1);
+  border-radius: 22px;
+  padding: 34px 28px;
+  background: linear-gradient(150deg, #ffffff 0%, #f8f8f9 62%, #eef0fb 100%);
+  overflow: hidden;
+  box-shadow: 0 16px 34px rgba(17, 20, 57, 0.14);
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      ellipse 58% 52% at 96% 0%,
+      rgba(121, 88, 255, 0.24),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 50% 48% at 0% 100%,
+      rgba(0, 212, 255, 0.2),
+      transparent 60%
+    );
+  pointer-events: none;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.home-hero p {
+  margin: 14px 0 0;
+  color: #4b5186;
+  font-size: 16px;
+}
+
+.home-login-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 700px) {
+  .home-login-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.home-login-card {
+  border: 1px solid rgba(17, 20, 57, 0.12);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  background: #ffffff;
+  text-decoration: none;
+  color: #111439;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-login-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(95, 111, 255, 0.55);
+  box-shadow: 0 16px 30px rgba(95, 111, 255, 0.18);
+}
+
+.home-login-title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.home-login-sub {
+  margin: 7px 0 0;
+  color: #57619a;
+  font-size: 13px;
+}
+
+.home-section-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .home-section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.home-panel {
+  border: 1px solid rgba(17, 20, 57, 0.12);
+  border-radius: 16px;
+  padding: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 22px rgba(17, 20, 57, 0.1);
+}
+
+.home-panel h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.home-panel p {
+  margin: 10px 0 0;
+  color: #4b5186;
+  line-height: 1.6;
+}
+
+.home-tab-row {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.home-tab {
+  border: 1px solid rgba(17, 20, 57, 0.16);
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: #f3f4fb;
+  color: #424b84;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.home-tab.active {
+  border-color: rgba(95, 111, 255, 0.55);
+  background: linear-gradient(90deg, rgba(95, 111, 255, 0.2), rgba(0, 212, 255, 0.18));
+  color: #111439;
+}
+
+.home-mini-card {
+  margin-top: 14px;
+  border: 1px solid rgba(17, 20, 57, 0.14);
+  border-radius: 12px;
+  padding: 12px;
+  background: linear-gradient(145deg, #f8f8f9, #edf0fc);
+}
+
+.home-mini-card h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.home-mini-card p {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.home-contact-line {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(95, 111, 255, 0.14), rgba(0, 212, 255, 0.14));
+  color: #1f255f;
+  font-size: 15px;
+}
+
+.home-note {
+  margin-top: 18px;
+  text-align: center;
+  color: #4b5186;
+  font-size: 13px;
+}
